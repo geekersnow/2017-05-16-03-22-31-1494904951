@@ -27,8 +27,8 @@ module.exports = function main(num) {
 		{	
 			actual.push(numcode[numarray[i]][j]);	
 		}
+		actual.join(' ');
 		actual.push("\n");		
-	}	
-	actual.join(' ');		
+	}			
     return actual;
 };
