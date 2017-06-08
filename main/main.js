@@ -16,9 +16,10 @@ module.exports = function main(num) {
 	
 	for (var i= 0; i < numarray.length; i++)
 	{
-		for(var j = 0; j < 3; j++)
+		for(var j = 0; j < 10; j++)
 		{	
-			actual.push(numcode[numarray[i]][j]);
+			var  temp = parseInt(numarray[j]); 
+			actual.push(numcode[temp][i]);
 			actual.join(' ');
 		}
 		actual.push("\n");		
