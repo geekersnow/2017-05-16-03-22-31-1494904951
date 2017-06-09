@@ -3,7 +3,7 @@
 // |_|   ..|   |_.   ._|   ..|   ._|   |_|   ..|   |_|   ..|
 
 module.exports = function main(num) {
-	
+	//establish code list for number 0~9
     var number = ["._.", "...", "|.|", "..|", "._|", "|_|", "|_."];
 	var numcode = {
 		 '0':[number[0],number[2],number[5]],
@@ -17,7 +17,7 @@ module.exports = function main(num) {
 		 '8':[number[0],number[5],number[5]],
 		 '9':[number[0],number[5],number[3]]
 	};
-	
+	//split num into single number
 	var numarray = num.split('');
 	var strarray = [];
 	var actual = " ";
@@ -26,11 +26,9 @@ module.exports = function main(num) {
 	{
 		for(var j = 0; j < numarray.length; j++)
 		{	
-			console.log(numcode[numarray[j]][i]+"------");
 			strarray.push(numcode[numarray[j]][i]);
-			console.log(strarray+"---"+i+j);
 		}
-		actual = strarray.join(' ')+"\n";	
+		actual = strarray.join(" ")+"\n";	
 	}
 	return actual;
 };
