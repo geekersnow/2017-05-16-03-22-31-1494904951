@@ -19,16 +19,20 @@ module.exports = function main(num) {
 	};
 	//split num into single number
 	var numarray = num.split('');
-	var strarray = [];
-	var actual = " ";
+	var actual = "";
 	
 	for (var i= 0; i < 3; i++)
 	{
 		for(var j = 0; j < numarray.length; j++)
 		{	
-			strarray.push(numcode[numarray[j]][i]);
+			if(i==numarray.length-1)
+				actual += numcode[numarray[j]][i];
+			else
+				actual += numcode[numarray[j]][i];
 		}
-		actual = strarray.join(" ")+"\n";	
+		actual += '\n';
+		}
+		
 	}
 	return actual;
 };
