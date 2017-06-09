@@ -30,9 +30,7 @@ module.exports = function main(num) {
 			else
 				actual += numcode[numarray[j]][i];
 		}
-		actual += '\n';
-		}
-		
+		actual += '\n';		
 	}
 	return actual;
 };
