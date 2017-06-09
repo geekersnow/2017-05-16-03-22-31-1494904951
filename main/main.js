@@ -25,7 +25,7 @@ module.exports = function main(num) {
 	{
 		for(var j = 0; j < numarray.length; j++)
 		{	
-			if(i==numarray.length-1)
+			if(j == numarray.length-1)
 				actual += numcode[numarray[j]][i];
 			else
 				actual += numcode[numarray[j]][i]+' ';
